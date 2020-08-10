@@ -1,0 +1,43 @@
+// variables:
+$bg-color: #0a0b5b;
+$bd-dark: #050830;
+$primary-txt-color: #cdddfd;
+$secondary-txt-color: #4a4d9d;
+$accent-color: #efc462;
+
+html,
+body {
+	margin: 0;
+	background-color: #0a0b5b;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	color: $primary-txt-color;
+}
+
+.button {
+	// background-color: none;
+	color: $accent-color;
+	border: 2px solid $accent-color;
+	padding: 0.5em 1em;
+	border-radius: 20px;
+}
+
+.site-nav ul {
+	display: none;
+}
+
+.welcome .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.portfolio {
+	background-image: url(../images/square_bg.png);
+	background-position: center;
+	background-size: cover;
+}
