@@ -10,6 +10,20 @@ $secondary-txt-color: #222;
 $primary: #ffc636;
 /* ------------------ */
 
+/* MIXINS: 															*/
+/* ---------------------------------------- */
+@mixin section-padding {
+	padding: 30px 20px;
+}
+
+@mixin h3 {
+	h3 {
+		margin-bottom: 0;
+		text-align: center;
+	}
+}
+/* ------------------ */
+
 /* RESET: 																	*/
 /* ---------------------------------------- */
 /* This Next Rule and the one after is called the
@@ -116,6 +130,7 @@ h4 {
 .grid {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
+	gap: 10px;
 }
 
 // Navigation Section
@@ -157,16 +172,12 @@ h4 {
 
 // Portfolio Section
 #portfolio {
-	padding: 30px 20px;
+	@include section-padding;
+	@include h3;
 	background-image: url(../images/square_bg.png);
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
-
-	h3 {
-		margin-bottom: 0;
-		text-align: center;
-	}
 
 	.projects {
 		a {
@@ -188,11 +199,27 @@ h4 {
 	}
 }
 
-// .portfolio {
-// 	background-image: url(../images/square_bg.png);
-// 	background-position: center;
-// 	background-size: cover;
-// }
+#skills {
+	@include section-padding;
+	@include h3;
+	background: #07083e;
+
+	ul {
+		margin: 40px 0;
+	}
+
+	li {
+		padding: 10px;
+		text-align: center;
+		background: rgba($color: #000, $alpha: 0.2);
+		grid-column: span 4;
+	}
+
+	img {
+		height: 80px;
+		margin: 10px auto;
+	}
+}
 /* ------------------ */
 
 /* MEDIA QUERIES:
