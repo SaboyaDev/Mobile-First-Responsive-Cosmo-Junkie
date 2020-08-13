@@ -1,12 +1,17 @@
-// font iinports
+/* FONT INPORTS: 														*/
+/* ---------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* ------------------ */
 
-// variables:
+/* VARIABLES: 															*/
+/* ---------------------------------------- */
 $secondary: #0a0b5b;
 $secondary-txt-color: #222;
 $primary: #ffc636;
+/* ------------------ */
 
-// reset
+/* RESET: 																	*/
+/* ---------------------------------------- */
 body,
 p,
 a,
@@ -20,8 +25,10 @@ li {
 li {
 	list-style-type: none;
 }
+/* ------------------ */
 
-// base styles
+/* BASE STYLES: 														*/
+/* ---------------------------------------- */
 body {
 	background-color: $secondary;
 	overflow-x: hidden;
@@ -52,8 +59,10 @@ textarea {
 	border-radius: 20px;
 	border: 2px solid #9893d8;
 }
+/* ------------------ */
 
-// fonts
+/* FONTS: 																	*/
+/* ---------------------------------------- */
 h1,
 h2,
 h3,
@@ -87,24 +96,60 @@ h4 {
 	/* These are leading paragraphs */
 	font-size: 1.1em;
 }
+/* ------------------ */
 
-// mobile styles
-
-.site-nav ul {
-	display: none;
-}
-
-.welcome .grid {
+/* MOBILE STYLES:													  */
+/* ---------------------------------------- */
+.grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(8, 1fr);
 }
 
-.portfolio {
-	background-image: url(../images/square_bg.png);
-	background-position: center;
-	background-size: cover;
+.site-nav {
+	margin: 0 20px;
+
+	ul {
+		display: none;
+	}
+
+	h1 {
+		grid-column: 1/4;
+		grid-row: 1; /* I don't have to, but just to be explicit*/
+		padding-bottom: 10px;
+		border-bottom: 3px solid $primary;
+	}
 }
 
+#welcome {
+	padding: 0 20px 20px 20px;
+
+	.welcome-text {
+		grid-column: 1/6;
+	}
+
+	.welcome-img {
+		grid-column: 6/9;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+// .welcome .grid {
+// 	display: grid;
+// 	grid-template-columns: 1fr 1fr;
+// }
+
+// .portfolio {
+// 	background-image: url(../images/square_bg.png);
+// 	background-position: center;
+// 	background-size: cover;
+// }
+/* ------------------ */
+
+/* MEDIA QUERIES:
+/* ---------------------------------------- */
 // small tablet styles
 @media screen and (min-width: 620px) {
 }

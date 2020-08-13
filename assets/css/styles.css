@@ -1,4 +1,12 @@
+/* FONT INPORTS: 														*/
+/* ---------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+/* ------------------ */
+/* VARIABLES: 															*/
+/* ---------------------------------------- */
+/* ------------------ */
+/* RESET: 																	*/
+/* ---------------------------------------- */
 body,
 p,
 a,
@@ -13,6 +21,9 @@ li {
   list-style-type: none;
 }
 
+/* ------------------ */
+/* BASE STYLES: 														*/
+/* ---------------------------------------- */
 body {
   background-color: #0a0b5b;
   overflow-x: hidden;
@@ -44,6 +55,9 @@ textarea {
   border: 2px solid #9893d8;
 }
 
+/* ------------------ */
+/* FONTS: 																	*/
+/* ---------------------------------------- */
 h1,
 h2,
 h3,
@@ -78,21 +92,44 @@ h4 {
   font-size: 1.1em;
 }
 
+/* ------------------ */
+/* MOBILE STYLES:													  */
+/* ---------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.site-nav {
+  margin: 0 20px;
+}
 .site-nav ul {
   display: none;
 }
-
-.welcome .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.site-nav h1 {
+  grid-column: 1/4;
+  grid-row: 1;
+  /* I don't have to, but just to be explicit*/
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffc636;
 }
 
-.portfolio {
-  background-image: url(../images/square_bg.png);
-  background-position: center;
-  background-size: cover;
+#welcome {
+  padding: 0 20px 20px 20px;
+}
+#welcome .welcome-text {
+  grid-column: 1/6;
+}
+#welcome .welcome-img {
+  grid-column: 6/9;
+}
+#welcome .welcome-img img {
+  max-width: 100%;
 }
 
+/* ------------------ */
+/* MEDIA QUERIES:
+/* ---------------------------------------- */
 @media screen and (min-width: 960px) {
   body {
     font-size: 18px;
