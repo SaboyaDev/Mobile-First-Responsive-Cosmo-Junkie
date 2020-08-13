@@ -12,6 +12,18 @@ $primary: #ffc636;
 
 /* RESET: 																	*/
 /* ---------------------------------------- */
+/* This Next Rule and the one after is called the
+   Universal Box Sizing with Inheritance */
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body,
 p,
 a,
@@ -89,7 +101,7 @@ h2 {
 
 h4 {
 	/* h4 is description text */
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 .leading {
@@ -100,11 +112,13 @@ h4 {
 
 /* MOBILE STYLES:													  */
 /* ---------------------------------------- */
+// Out Basic Grid System 8 Columns
 .grid {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 }
 
+// Navigation Section
 .site-nav {
 	margin: 0 20px;
 
@@ -120,6 +134,7 @@ h4 {
 	}
 }
 
+// Welcome Section
 #welcome {
 	padding: 0 20px 20px 20px;
 
@@ -140,10 +155,38 @@ h4 {
 	}
 }
 
-// .welcome .grid {
-// 	display: grid;
-// 	grid-template-columns: 1fr 1fr;
-// }
+// Portfolio Section
+#portfolio {
+	padding: 30px 20px;
+	background-image: url(../images/square_bg.png);
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+
+	h3 {
+		margin-bottom: 0;
+		text-align: center;
+	}
+
+	.projects {
+		a {
+			grid-column: 1/9;
+			text-align: center;
+			margin: 20px 0;
+			display: flex;
+
+			& * {
+				max-width: 40%;
+				margin: 0 20px;
+				align-self: center;
+			}
+		}
+
+		h4 {
+			color: #9994f7;
+		}
+	}
+}
 
 // .portfolio {
 // 	background-image: url(../images/square_bg.png);

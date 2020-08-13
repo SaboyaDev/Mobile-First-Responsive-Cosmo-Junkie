@@ -7,6 +7,18 @@
 /* ------------------ */
 /* RESET: 																	*/
 /* ---------------------------------------- */
+/* This Next Rule and the one after is called the
+   Universal Box Sizing with Inheritance */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body,
 p,
 a,
@@ -84,7 +96,7 @@ h2 {
 
 h4 {
   /* h4 is description text */
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .leading {
@@ -128,6 +140,32 @@ h4 {
 }
 #welcome .welcome-img img {
   max-width: 200%;
+}
+
+#portfolio {
+  padding: 30px 20px;
+  background-image: url(../images/square_bg.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+#portfolio h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+#portfolio .projects a {
+  grid-column: 1/9;
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+}
+#portfolio .projects a * {
+  max-width: 40%;
+  margin: 0 20px;
+  align-self: center;
+}
+#portfolio .projects h4 {
+  color: #9994f7;
 }
 
 /* ------------------ */
