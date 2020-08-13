@@ -120,11 +120,14 @@ h4 {
 #welcome .welcome-text {
   grid-column: 1/6;
 }
+#welcome .welcome-text a {
+  margin: 20px 0;
+}
 #welcome .welcome-img {
   grid-column: 6/9;
 }
 #welcome .welcome-img img {
-  max-width: 100%;
+  max-width: 200%;
 }
 
 /* ------------------ */
