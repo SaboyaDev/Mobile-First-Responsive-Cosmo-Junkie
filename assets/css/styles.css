@@ -45,6 +45,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+body > * {
+  width: 100%;
+}
+
 .button {
   background: none;
   border: 2px solid #ffc636;
