@@ -1,31 +1,94 @@
+// font iinports
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 // variables:
-$bg-color: #0a0b5b;
-$bd-dark: #050830;
-$primary-txt-color: #cdddfd;
-$secondary-txt-color: #4a4d9d;
-$accent-color: #efc462;
+$secondary: #0a0b5b;
+$secondary-txt-color: #222;
+$primary: #ffc636;
 
-html,
-body {
+// reset
+body,
+p,
+a,
+ul,
+li {
 	margin: 0;
-	background-color: #0a0b5b;
-}
-
-a {
+	padding: 0;
 	text-decoration: none;
 }
 
+li {
+	list-style-type: none;
+}
+
+// base styles
 body {
-	color: $primary-txt-color;
+	background-color: $secondary;
+	overflow-x: hidden;
+	font-family: 'Rubik', sans-serif;
 }
 
 .button {
-	// background-color: none;
-	color: $accent-color;
-	border: 2px solid $accent-color;
-	padding: 0.5em 1em;
+	background: none;
+	border: 2px solid $primary;
+	color: $primary;
+	padding: 6px 12px;
 	border-radius: 20px;
+	text-transform: uppercase;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+	display: inline-block;
 }
+
+.button:hover {
+	color: $secondary-txt-color;
+	background: $primary;
+}
+
+input,
+textarea {
+	background-color: rgba($color: #fff, $alpha: 0.05);
+	color: #f2f2f2;
+	padding: 10px 16px;
+	border-radius: 20px;
+	border: 2px solid #9893d8;
+}
+
+// fonts
+h1,
+h2,
+h3,
+h4 {
+	color: #dddbff;
+	font-weight: normal;
+}
+
+p,
+a,
+li {
+	color: #9893d8;
+}
+
+h1, /* h1 is the logo-name are the sub-headings */
+h3 {
+	font-size: 1.2em;
+}
+
+h2 {
+	/* h2 is the Big heading */
+	font-size: 1.6em;
+}
+
+h4 {
+	/* h4 is description text */
+	font-size: 1.1em;
+}
+
+.leading {
+	/* These are leading paragraphs */
+	font-size: 1.1em;
+}
+
+// mobile styles
 
 .site-nav ul {
 	display: none;
@@ -40,4 +103,22 @@ body {
 	background-image: url(../images/square_bg.png);
 	background-position: center;
 	background-size: cover;
+}
+
+// small tablet styles
+@media screen and (min-width: 620px) {
+}
+
+// large tablets & laptop styles
+@media screen and (min-width: 960px) {
+	body {
+		font-size: 18px;
+	}
+}
+
+// desktop styles
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: 20px;
+	}
 }
