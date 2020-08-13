@@ -116,6 +116,18 @@ h4 {
   gap: 10px;
 }
 
+#portfolio,
+#skills,
+#contact {
+  padding: 30px 20px;
+}
+#portfolio h3,
+#skills h3,
+#contact h3 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
 .site-nav {
   margin: 0 20px;
 }
@@ -147,15 +159,10 @@ h4 {
 }
 
 #portfolio {
-  padding: 30px 20px;
   background-image: url(../images/square_bg.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-}
-#portfolio h3 {
-  margin-bottom: 0;
-  text-align: center;
 }
 #portfolio .projects a {
   grid-column: 1/9;
@@ -173,12 +180,7 @@ h4 {
 }
 
 #skills {
-  padding: 30px 20px;
   background: #07083e;
-}
-#skills h3 {
-  margin-bottom: 0;
-  text-align: center;
 }
 #skills ul {
   margin: 40px 0;
@@ -192,6 +194,62 @@ h4 {
 #skills img {
   height: 80px;
   margin: 10px auto;
+}
+
+#contact {
+  background: #080936;
+}
+#contact p {
+  margin-bottom: 0;
+  text-align: center;
+}
+#contact form {
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  margin: 10px 0;
+}
+#contact form .button {
+  margin-top: 10px;
+}
+
+footer {
+  padding: 30px 20px;
+  background-color: #14153d;
+  background-image: url(../images/footer_image.png);
+  background-size: 40%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+footer .grid {
+  align-items: center;
+}
+footer .copyright {
+  grid-column: 1/3;
+  font-size: 0.8em;
+}
+footer .social {
+  grid-column: 7/9;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .social li {
+  align-self: center;
+}
+footer .social img {
+  height: 100%;
+}
+footer li:nth-child(1) {
+  margin: 0 6px;
+}
+footer li:nth-child(2) {
+  margin: 0 0 0 6px;
 }
 
 /* ------------------ */
