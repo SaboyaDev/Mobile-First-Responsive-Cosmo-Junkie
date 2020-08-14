@@ -1,8 +1,5 @@
-# Cosmo Junkie :rocket:
-
-###### A Mobile-First design site with a space theme
-
----
+# Cosmo Junkie :rocket: 
+A Mobile-First design site with a space theme
 
 ## Technologies:
 
