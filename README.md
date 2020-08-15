@@ -1,4 +1,4 @@
-# A Mobile-First Build with a space theme - Cosmo Junkie :rocket: 
+# Mobile-First Build w/ a space theme - Cosmo Junkie :rocket: 
 
 
 
