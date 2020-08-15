@@ -1,11 +1,11 @@
-# A Mobile-First design site with a space themeCosmo Junkie :rocket: 
-A Mobile-First design site with a space theme
+# A Mobile-First Build with a space theme - Cosmo Junkie :rocket: 
 
 
 
 <p align="center">
    <img src="assets/gif/CosmoJunkie.gif">
 <p/>
+
 
 ## Technologies:
 
