@@ -1,8 +1,5 @@
-# Cosmo Junkie :rocket:
-
-###### A Mobile-First design site with a space theme
-
----
+# Cosmo Junkie :rocket: 
+A Mobile-First design site with a space theme
 
 ## Technologies:
 
@@ -24,9 +21,11 @@ Below I have the steps required to clone my repo and have a basic SCSS set up in
 _Make sure to have [Node.js](https://nodejs.org/en/) so that you can use [NPM](https://www.npmjs.com/) CLI, which comes with Node.js installation._
 
 **Clone my repo**
+
 `git clone https://github.com/SaboyaDev/Mobile-First-Responsive-Cosmo-Junkie.git`
 
 **Install SASS globally** \*_(for more info [SASS](https://www.npmjs.com/package/sass))_
+
 `npm install -g sass`
 
 **Run SASS watch:**
